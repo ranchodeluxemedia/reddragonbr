@@ -10,13 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Static Page Routes
+    Route::get('/', 'PageController@index');
+    Route::get('/about', 'PageController@about');
+    Route::get('/contact', 'PageController@contact');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Resource Routes
+    Route::resource('events', 'EventController');
 
-Route::resource('events', 'EventController');
+// User Auth Routes
+    Auth::routes();
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
