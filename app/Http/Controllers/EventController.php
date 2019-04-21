@@ -41,7 +41,8 @@ class EventController extends Controller
         $event = Event::create($request->all());
         $event->addMediaFromRequest('image')->toMediaCollection('images');
 
-        return redirect('/events')->with('success', 'Event created successfully!');
+        flash('Event created successfully!', 'alert-success');
+        return redirect('/events');
     }
 
     /**
