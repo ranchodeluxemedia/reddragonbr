@@ -9,7 +9,9 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import ScrollReveal from 'scrollreveal';
+
+
+import 'slick-slider';
 
 /**
  * The following block of code may be used to automatically register your
@@ -34,6 +36,9 @@ const app = new Vue({
     el: '#app'
 });
 
+
+// ScrollReveal.js
+import ScrollReveal from 'scrollreveal';
 window.sr = ScrollReveal({
     reset: true
 });
@@ -41,3 +46,7 @@ window.sr = ScrollReveal({
 sr.reveal('.revealFadeIn', {
     duration: 2500,
 });
+
+// slickSlider setup
+import 'slick-slider';
+$('#slick-slider').slick();
