@@ -11,6 +11,6 @@ class Venue extends Model
 
     public function events()
     {
-        $this->hasMany('App\Event');
+        return $this->hasMany('App\Event');
     }
 }

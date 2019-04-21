@@ -14,6 +14,6 @@ class Event extends Model implements HasMedia
 
     public function venue()
     {
-        $this->belongsTo('App\Venue');
+       return $this->belongsTo('App\Venue');
     }
 }

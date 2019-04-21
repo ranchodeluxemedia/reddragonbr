@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use App\Venue;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -25,7 +26,8 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('events.create');
+        $venues = Venue::pluck('name', 'id')->toArray();
+        return view('events.create', compact('venues'));
     }
 
     /**
