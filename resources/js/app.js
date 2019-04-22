@@ -9,8 +9,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-
-
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 /**
  * The following block of code may be used to automatically register your
@@ -63,4 +62,9 @@ flatpickr('#flatpickr', {
     dateFormat: "Y-m-d H:i:S",
     altInput: true,
     altFormat: "F j, Y h:iK",
+});
+
+// CKEditor Classic
+ClassicEditor.create(document.querySelector('#editor'), {
+    toolbar: ['bold', 'italic', 'link', 'blockQuote']
 });

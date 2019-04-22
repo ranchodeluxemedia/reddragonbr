@@ -9,7 +9,7 @@
                     {!! Form::text('date', 'Date')->id('flatpickr') !!}
                     {!! Form::text('artist', 'Artist Name') !!}
                     {!! Form::text('support_artist', 'Supporting Artist') !!}
-                    {!! Form::textarea('description', 'Description') !!}
+                    {!! Form::textarea('description', 'Description')->id('editor') !!}
                     {!! Form::file('image', 'Headshot or Flyer Image') !!}
                     {!! Form::text('ticket_price', 'Ticket Price') !!}
                     {!! Form::text('vip_price', 'VIP Ticket Price') !!}
