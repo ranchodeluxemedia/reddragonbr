@@ -6,7 +6,7 @@
         <div class="row justify-content-middle">
             <div class="col-md-6">
                 {!! Form::open()->post()->route('events.store')->multipart() !!}
-                    {!! Form::text('date', 'Date') !!}
+                    {!! Form::text('date', 'Date')->id('flatpickr') !!}
                     {!! Form::text('artist', 'Artist Name') !!}
                     {!! Form::text('support_artist', 'Supporting Artist') !!}
                     {!! Form::textarea('description', 'Description') !!}

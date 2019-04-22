@@ -25,7 +25,10 @@
     },
     "dependencies": {
         "animejs": "^3.0.1",
+        "dropzone": "^5.5.1",
+        "flatpickr": "^4.5.7",
         "scrollreveal": "^4.0.5",
-        "slick-slider": "^1.8.2"
+        "slick-slider": "^1.8.2",
+        "smartcrop": "^2.0.3"
     }
 }

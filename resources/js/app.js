@@ -56,3 +56,12 @@ import anime from 'animejs';
 anime({
 
 });
+
+// flatpickr
+import flatpickr from 'flatpickr';
+flatpickr('#flatpickr', {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i:S",
+    altInput: true,
+    altFormat: "F j, Y h:iK",
+});
