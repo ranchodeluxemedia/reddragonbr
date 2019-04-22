@@ -11,7 +11,6 @@ window.Vue = require('vue');
 
 
 
-import 'slick-slider';
 
 /**
  * The following block of code may be used to automatically register your
