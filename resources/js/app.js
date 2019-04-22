@@ -50,3 +50,9 @@ sr.reveal('.revealFadeIn', {
 // slickSlider setup
 import 'slick-slider';
 $('#slick-slider').slick();
+
+// anime.js
+import anime from 'animejs';
+anime({
+
+});
