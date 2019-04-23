@@ -12535,3 +12535,15 @@ a.text-dark:focus {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+.thumb {
+  text-align: center;
+}
+
+.img-preview {
+  background: #FFF;
+  max-width: 70%;
+  margin: 1em;
+  padding: 0.5em;
+  border: 1px dashed #ccc;
+}
+

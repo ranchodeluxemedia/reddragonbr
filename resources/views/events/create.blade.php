@@ -10,7 +10,12 @@
                     {!! Form::text('artist', 'Artist Name') !!}
                     {!! Form::text('support_artist', 'Supporting Artist') !!}
                     {!! Form::textarea('description', 'Description')->id('editor') !!}
-                    {!! Form::file('image', 'Headshot or Flyer Image') !!}
+                    <div class="wrap">
+                        <div class="thumb">
+                            <img class="img-fluid img-preview" id="img" src="http://calgarypma.ca/wp-content/uploads/2018/01/default-thumbnail.jpg" alt="">
+                            {!! Form::file('image', 'Image Upload')->id('upload') !!}
+                        </div>
+                    </div>
                     {!! Form::text('ticket_price', 'Ticket Price') !!}
                     {!! Form::text('vip_price', 'VIP Ticket Price') !!}
                     {!! Form::text('ticket_url', 'Ticket Link') !!}
