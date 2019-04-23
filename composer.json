@@ -15,6 +15,7 @@
         "caneco/artisan-aliases": "^1.1",
         "cviebrock/eloquent-sluggable": "^4.8",
         "fideloper/proxy": "^4.0",
+        "hieu-le/active": "^3.5",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "mews/purifier": "^2.1",
